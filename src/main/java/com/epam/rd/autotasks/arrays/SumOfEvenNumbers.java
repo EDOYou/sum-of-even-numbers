@@ -11,7 +11,13 @@ public class SumOfEvenNumbers {
     public static int sum(int[] array){
 
         //put your code here
+        if (array == null) return 0;
+        else {
+            int sum = 0;
+            for (int value : array) if (value % 2 == 0) sum += value;
+            return sum;
+        }
 
-        throw new UnsupportedOperationException();
+        //throw new UnsupportedOperationException();
     }
 }
